@@ -1,0 +1,20 @@
+body{
+    background-image: url("../img/journal.jpg");
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.titel {
+    position: fixed; margin-left: 30%;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+}
+div {
+    margin: 200px;
+    background-color: aqua;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
