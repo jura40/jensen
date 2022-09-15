@@ -1,20 +1,133 @@
-body{
-    background-image: url("../img/journal.jpg");
 
-    background-repeat: no-repeat;
-    background-size: 100%;
+.nav-link {
+    margin-left: 30px;
 }
-.titel {
-    position: fixed; margin-left: 30%;
-    font-family: 'Times New Roman', Times, serif;
-    color: aqua;
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+
+  .fakeimg img {
+    width: 100%;
+    height: 200px;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+    jumbotron background-color: red;
+    
+  }
+  #add-account-view {
+    display: none;
+  }
+  #edit-account-view {
+    display: none;
+  }
+.nav-item .reg-button{
+  position: absolute;
+  right: 120px;
+  top: 25px;
+  height: 40px;
+  width: 90px;
+  background-color: #2ecc71;
+  border-radius: 20px;
+  color: #FFFFFF;
+  border: 1px solid #2ecc71;
+
 }
-div {
-    margin: 200px;
-    background-color: aqua;
+
+.nav-item .reg-button:active{
+  background-color: #27ae60;
+
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 45%;
+
+.nav-item .log-button{
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  height: 40px;
+  width: 90px;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #2ecc71;
+  border: none;
+
 }
+
+.login-form{
+
+  position: absolute;
+  top: 170px;
+  right: 20px;
+  background-color: #343a40;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+
+ }  
+
+ .login-form input{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 160px;
+  height: 40px;
+ 
+
+ }  
+
+
+.reg-form{
+  height: 300px;
+  margin-top: 5%;
+  margin-left: 25%;
+  width: 50%;
+  background-color: #343a40;
+  border-radius: 10px;
+
+}
+
+.reg-form input[type="text"]{
+  margin-top: 60px;
+
+}
+
+.reg-form input{
+  margin-top: 10px;
+  height: 40px;
+  width: 80%;
+
+}
+
+
+.content{
+  margin-left: 10%;
+  margin-top: 70px;
+  width: 80%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.content img{
+  float: left;
+  margin-left: 10%;
+    height: 400px;
+  width: 80%;
+}
+
+.content p{
+padding-left: 100px;
+padding-right: 100px;
+}
+.content h3{
+  padding-left: 100px;
+
+  }
+  
+  .jumbotron{
+    background-image: url("../img/slideshow/0.jpg");
+
+    background-repeat: no-repeat !important;
+
+    background-size: cover !important;
+
+    background-position: center center !important; 
+  }
