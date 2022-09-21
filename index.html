@@ -34,7 +34,7 @@
 </head>
 <body>
     
-<p>Click the button to toggle between dark and light mode for this page.</p>
+<p>Click the button to toggle between dark and light mode.</p>
 
 <button onclick="myFunction()">dark/light</button>
 
@@ -58,7 +58,7 @@ function myFunction() {
         <a class="nav-link" href="suzuki.html"><img style="height:60px; width:60px;" src="./img/Suzuki_logo.png"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
+        <a class="nav-link" href="honda.html"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
       </li>    
       <li class="nav-item">
         <button class="reg-button" onclick="location.href='registrera.html'">Registrera</button>
@@ -73,7 +73,7 @@ function myFunction() {
 
 <div class="jumbotron text-center jumbotron1" style="margin-bottom:0">
   <h1>Här pratar vi om japansk motorcyklar</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  
 </div>
 
 
@@ -111,9 +111,10 @@ function myFunction() {
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg"><img src="./img/space.jpg" alt="picture"</div>
+      <h4 style= "color: rgb(168, 22, 66);">Japansk motorcyclar AB</h4>
+      <h2>Stolt sponsor</h2>
+      <h5>Since, Feb 27, 1981</h5>
+      <div class="fakeimg"><img src="./img/motogp1.png" alt="picture"</div>
       
       
     </div>
@@ -130,6 +131,12 @@ function myFunction() {
   <footer>
     <center>
     <p>japansk motorcyclar AB Västra Suzuki gatan 38 Hisingen, Göteborg </p>
+    <p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
     </center>
 </footer>
 <div class ="container-fluid">
