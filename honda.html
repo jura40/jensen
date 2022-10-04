@@ -33,7 +33,7 @@ function myFunction() {
 }
 </script>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Välj här</a>
+  <a class="navbar-brand" href="index.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -43,10 +43,13 @@ function myFunction() {
         <a class="nav-link" href="yamaha.html"><img style="height:60px; width:60px;" src="./img/yamaha-logo.png"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img style="height:60px; width:60px;" src="./img/Suzuki_logo.png"></a>
+        <a class="nav-link" href="suzuki.html"><img style="height:60px; width:60px;" src="./img/Suzuki_logo.png"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
+        <a class="nav-link" href="honda.html"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kawasaki.html"><img style="height:60px; width:60px;" src="./img/kawasaki-logo.jpg"></a>
       </li>    
       <li class="nav-item">
         <button class="reg-button" onclick="location.href='registrera.html'">Registrera</button>
@@ -59,17 +62,66 @@ function myFunction() {
   </div>  
 </nav>
 
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+<!-- image slider start-->
+<div class="slides-container" >
+  <img class="mySlides" src="../jensen/img/honda_slide/honda1.jpg" style="display: block;">
+  <img class="mySlides" src="../jensen/img/honda_slide/honda2.jpg" style="display: none;">
+  <img class="mySlides" src="../jensen/img/honda_slide/honda3.jpg" style="display: none;">
+  <img class="mySlides" src="../jensen/img/honda_slide/honda4.jpg" style="display: none;">
+
+  <button class="left-button" onclick="plusDivs(-1)">❮</button>
+  <button class="right-button" onclick="plusDivs(1)">❯</button>
+</div>
+
+  <div class="navigation-auto">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+    <div class="auto-btn4"></div>
+    </div>
+
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+
+    </div>
+  </div>
+</div>
+<!-- image slider end-->
+
 <div class="content">
 <img src="https://th.bing.com/th/id/R.459dfe0798a14728b5f6f5b43d0a8584?rik=1I8mufqG0jJkxQ&riu=http%3a%2f%2fmotonewsbrasil.com%2fwp-content%2fuploads%2f2020%2f11%2fyamaha-yzf-r6-2020-1.jpg&ehk=LrZpx31wdBxafDPfvzYRCBsNRjdPpt0%2byEBvFWMyx6o%3d&risl=&pid=ImgRaw&r=0"></img>
-<h3>Yamaha</h3>
-<p>Yamaha Motor Company är ett företag grundat av japanska Yamaha Corporation som grundades av Torakusu Yamaha. Efter att Yamaha Corporation blivit världens största pianotillverkare utvecklade den dåvarande verkställande direktören Genichi Kawakami Yamaha genom att skapa Yamaha Motor Company. 1 juli 1955 startade Yamaha sin motortillverkning och första produkten blev en motorcykel. Idag är Yamaha världens näst största motorcykeltillverkare.
+<div>
+  <h3>Honda</h3>
+<p>Honda Motor Company är ett företag grundat av japanska Yamaha Corporation som grundades av Torakusu Yamaha. Efter att Yamaha Corporation blivit världens största pianotillverkare utvecklade den dåvarande verkställande direktören Genichi Kawakami Yamaha genom att skapa Yamaha Motor Company. 1 juli 1955 startade Yamaha sin motortillverkning och första produkten blev en motorcykel. Idag är Yamaha världens näst största motorcykeltillverkare.
 
     Yamaha Corporation är den största aktieägaren (12,21%)[1] i Yamaha Motor Company. Trots att det inte är ett dotterbolag delar man logotypen och på många faciliteter. Däremot är det en viss skillnad på hur man skriver Yamaha i logotypen, Yamaha Motor Company använder ett annat m. Om man tittar noga ser man att m:et i Yamaha Motor Company går ändå ner till baslinjen medan det inte gör det på Yamaha Corporation.
     
     Sedan första motorcykeln har Yamaha expanderat inom olika delar av motorindustrin. Företaget tillverkar bland annat mopeder, motorcyklar, båtmotorer, vattenskotrar, snöskotrar, gräsklippare, snöslungor, elverk och golfbilar. Av kuriosaprodukterna kan nämnas en tvåhjulig tvåhjulsdriven motorcykel med delar från till exempel Öhlins. Yamaha har också varit med och utvecklat den kompakta V8-motorn i Volvo XC90.
     
     Företaget har sitt huvudkontor i Iwata, Shizuoka prefektur, Japan.[2]</p>
-
+</div>
 </div>
 <div class="login-form" id="login-form" style="display: none;">
     <form action="" method="">
@@ -79,6 +131,19 @@ function myFunction() {
     <input type="submit">
     </form>
       </div>
+      <footer>
+        <center>
+        <p>japansk motorcyclar AB Västra Suzuki gatan 38 Hisingen, Göteborg </p>
+        <p>tel 0730 33 44 55</p>
+        <p>mejl info@japansk.moto.se </p>
+        <p id="demo"></p>
+    
+    <script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    </script>
+        </center>
+    </footer>
 
 </body>
 

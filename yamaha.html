@@ -33,7 +33,7 @@ function myFunction() {
 }
 </script>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Välj här</a>
+  <a class="navbar-brand" href="index.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -43,11 +43,14 @@ function myFunction() {
         <a class="nav-link" href="yamaha.html"><img style="height:60px; width:60px;" src="./img/yamaha-logo.png"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img style="height:60px; width:60px;" src="./img/Suzuki_logo.png"></a>
+        <a class="nav-link" href="suzuki.html"><img style="height:60px; width:60px;" src="./img/Suzuki_logo.png"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
-      </li>    
+        <a class="nav-link" href="honda.html"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="kawasaki.html"><img style="height:60px; width:60px;" src="./img/kawasaki-logo.jpg"></a>
+      </li>   
       <li class="nav-item">
         <button class="reg-button" onclick="location.href='registrera.html'">Registrera</button>
       </li> 
@@ -79,6 +82,20 @@ function myFunction() {
     <input type="submit">
     </form>
       </div>
+      <footer>
+        <center>
+        <p>japansk motorcyclar AB Västra Suzuki gatan 38 Hisingen, Göteborg </p>
+        <p>tel 0730 33 44 55</p>
+        <p>mejl info@japansk.moto.se </p>
+        <p id="demo"></p>
+    
+    <script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    </script>
+        </center>
+        
+    </footer>
 
 </body>
 

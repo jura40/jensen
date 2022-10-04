@@ -19,6 +19,7 @@
     }
   }
     </script>
+
 </head>
 <body>
     
@@ -33,7 +34,7 @@ function myFunction() {
 }
 </script>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Välj här</a>
+  <a class="navbar-brand" href="index.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -43,11 +44,14 @@ function myFunction() {
         <a class="nav-link" href="yamaha.html"><img style="height:60px; width:60px;" src="./img/yamaha-logo.png"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img style="height:60px; width:60px;" src="./img/Suzuki_logo.png"></a>
+        <a class="nav-link" href="suzuki.html"><img style="height:60px; width:60px;" src="./img/Suzuki_logo.png"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
-      </li>    
+        <a class="nav-link" href="honda.html"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="kawasaki.html"><img style="height:60px; width:60px;" src="./img/kawasaki-logo.jpg"></a>
+      </li>  
       <li class="nav-item">
         <button class="reg-button" onclick="location.href='registrera.html'">Registrera</button>
       </li> 
@@ -58,13 +62,31 @@ function myFunction() {
     </ul>
   </div>  
 </nav>
+
+<script>
+function validateForm() {
+  let x = document.forms["theform"]["fname"].value;
+  let y = document.forms["theform"]["email"].value;
+  let z = document.forms["theform"]["password"].value;
+if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }if (z == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+}
+    </script>
     <div class="reg-form">
         <center>
-    <form action="" method="post">
-        <input type="text" placeholder="Will Smith"></br>
-        <input type="email" placeholder="example@example.se"></br>
-        <input type="password" placeholder="Password"></br>
-        <input type="submit" value="Registrera">
+    <form action="" method="post" id="theform">
+        <input type="text" placeholder="Will Smith" id="fname" required></br>
+        <input type="email" placeholder="example@example.se" id="email" minlength="3" maxlength="50" required></br>
+        <input type="password" placeholder="Password" id="password" minlength="8" maxlength="50" required></br>
+        <input type="submit" onClick="validateForm();" value="Registrera">
 
         
     </form>
@@ -75,8 +97,10 @@ function myFunction() {
     <form action="" method="">
     </br>
     <input type="email" placeholder="example@example.se" minlength="3" maxlength="50" required>
-    <input type="password" placeholder="Password" minlength="8" maxlength="20" required>
+    <input type="password" placeholder="Password" minlength="8" maxlength="50" required>
     <input type="submit">
+    
+    
     </form>
       </div>
 </body>

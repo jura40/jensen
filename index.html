@@ -59,7 +59,11 @@ function myFunction() {
       </li>
       <li class="nav-item">
         <a class="nav-link" href="honda.html"><img style="height:60px; width:60px;" src="./img/Honda_Logo.png"></a>
-      </li>    
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link" href="kawasaki.html"><img style="height:60px; width:60px;" src="./img/kawasaki-logo.jpg"></a>
+      </li>   
+     
       <li class="nav-item">
         <button class="reg-button" onclick="location.href='registrera.html'">Registrera</button>
       </li> 
@@ -131,12 +135,39 @@ function myFunction() {
   <footer>
     <center>
     <p>japansk motorcyclar AB Västra Suzuki gatan 38 Hisingen, Göteborg </p>
+    <p>tel 0730 33 44 55</p>
+    <p>mejl info@japansk.moto.se </p>
     <p id="demo"></p>
 
 <script>
 const d = new Date();
 document.getElementById("demo").innerHTML = d;
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+</style>
+</head>
+<body>
+
+<p>Click on the icon to toggle between thumbs-up and thumbs-down (like/dislike):</p>
+
+<i onclick="Function2(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function Function2(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
     </center>
 </footer>
 <div class ="container-fluid">

@@ -130,4 +130,29 @@ padding-right: 100px;
     background-size: cover !important;
 
     background-position: center center !important; 
+  }.mySlides{
+    margin-left: 20%;
+    width: 60%;
+    height: 450px;
+  }
+  /*
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23E3C9;
+  }
+  */
+  .slider{
+    width: 800px;
+    height: 500ox;
+    border-radius: 10px;
+  }
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
   }
